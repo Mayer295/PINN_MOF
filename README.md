@@ -4,7 +4,9 @@
  ## Dataset
  The dataset utilized in this study comprises 98,695 MOFs, as detailed by Ahmed et al, and was sourced from the MOF database maintained on the Hydrogen Materials Advanced Research Consortium (HyMARC) platform. 
  https://datahub.hymarc.org/dataset/computational-prediction-of-hydrogen-storage-capacities-in-mofs
+ 
  The ps_usable_hydrogen_storage_capacity_gcmcv2 data is used for model training.
+ 
  The 820k_mofs_crytal_props_ml_h2_ps_v17feb2021 data is used for fast screening
 
 ## Note
