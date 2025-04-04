@@ -1,6 +1,12 @@
 # Physics-Informed Machine Learning for Fast Screening High Hydrogen Storage MOFs with Monotonicity Constraints
  This repository contains an open source implementation of the machine learning model described in the literature and the corresponding dataset.
 
+ ## Model
+ The Model folder contains the training code for seven different machine learning models: Random Forest (RF), Extremely Randomized Trees (Extra Trees/ERT), LightGBM, XGBoost(XGB), Support Vector Machine (SVM), Neural Network (NN), and Physics-Informed Neural Network (PINN).In addition to the PINN, five other machine learning models—RF, LightGBM, XGB, SVM, and NN—are considered for comparative analysis. To optimize the performance of these five ML models, Optuna is utilized to identify the optimal hyperparameters, which is a machine learning tool grounded in Bayesian optimization. 
+ 
+The ERT model originates from this paper:https://www.sciencedirect.com/science/article/pii/S2666389921001240
+ 
+
  ## Dataset
  The dataset utilized in this study comprises 98,695 MOFs, as detailed by Ahmed et al, and was sourced from the MOF database maintained on the Hydrogen Materials Advanced Research Consortium (HyMARC) platform. 
  https://datahub.hymarc.org/dataset/computational-prediction-of-hydrogen-storage-capacities-in-mofs
