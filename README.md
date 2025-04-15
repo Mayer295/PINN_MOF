@@ -1,8 +1,14 @@
 # Physics-Informed Machine Learning for Fast Screening High Hydrogen Storage MOFs with Monotonicity Constraints
  This repository contains an open source implementation of the machine learning model described in the literature and the corresponding dataset.
 
+![TOC graphic](https://github.com/user-attachments/assets/cb3ad311-73ca-4cec-b678-580fb8229d24)
+
  ## Abstract
-Hydrogen represents a highly promising alternative energy vehicle that facilitates the transition toward a carbon-neutral economy. However, the current hydrogen storage technologies are both inefficient and costly, which significantly limits the overall efficiency of hydrogen energy systems. The method of storing hydrogen via physical adsorption in Metal-Organic Frameworks (MOFs) has emerged as a particularly promising solution for hydrogen storage, attributed to their extensive surface area and remarkable tunability. Machine learning techniques have demonstrated great potential in screening a theoretically limitless number of MOFs that meet specific hydrogen storage targets, but these models often lack physical consistency. To address this limitation, this study presents a Physics-Informed Neural Network (PINN) that incorporates monotonic relationships between the crystallographic characteristics and the hydrogen storage capacity into the neural network architecture to effectively screen the high hydrogen storage capacity MOFs. The performance of the identified top MOFs were validated by the Grand Canonical Monte Carlo simulations.  Compared to other machine learning methods, the top MOFs identified by the PINN exhibit meaningful crystallographic features via heatmap analysis. The proposed PINN model successfully identified two experimentally synthesized MOFs, LADQEM_CSD17 and LADQEM01_CSD17, that meet the targets for onboard hydrogen storage systems established by the U.S. Department of Energy for the year 2025.
+The key contributions of this paper include:
+1.A novel PINN framework that enforces physical constraints for fast MOF screening
+2.The proposed PINN model exhibits not only superior prediction performance but also enhanced physics consistence and robust generalization capabilities.
+3.Two experimentally synthesized materials identified by the PINN model have met DOE 2025 targets for onboard hydrogen storage, demonstrating significant real-world impact.
+
 
  ## Model
  The Model folder contains the training code for seven different machine learning models: Random Forest (RF), Extremely Randomized Trees (Extra Trees/ERT), LightGBM, XGBoost(XGB), Support Vector Machine (SVM), Neural Network (NN), and Physics-Informed Neural Network (PINN).In addition to the PINN, five other machine learning models—RF, LightGBM, XGB, SVM, and NN—are considered for comparative analysis. To optimize the performance of these five ML models, Optuna is utilized to identify the optimal hyperparameters, which is a machine learning tool grounded in Bayesian optimization. 
