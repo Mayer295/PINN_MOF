@@ -36,8 +36,9 @@ MEPO-ML:a robust graph attention network model for rapid generation of partial a
 
 PACMAN: a Partial Atomic Charge Predicter for Porous Materials based on Graph Convolutional Neural Network. https://pacman-charge-mtap.streamlit.app
 
-
-
+## Reference
+if this work is helpful your reasearch please cite the following publication:
+https://www.sci-hub.ru/10.1021/acs.jctc.5c00242  
 
 ## Note
 Code and data for academic purpose only.
